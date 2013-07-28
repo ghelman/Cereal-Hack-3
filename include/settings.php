@@ -1,0 +1,15 @@
+<?php
+
+//API settings
+define("FB_APP_ID", "216570035168676");
+define("FB_APP_SECRET", "178c768a73477eb6d3ba53647931125c");
+define("TROPO_KEY", "238595255156fd428b9239115c4c972487b26cd556f1a81ca50b076f2f44afbf365a07cf79eb7af26c19d4fa");
+
+
+define("STATUS_NEW", 1);
+define("STATUS_ACTIVE", 2);
+define("STATUS_COMPLETE", 3);
+
+
+
+?>
