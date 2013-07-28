@@ -43,14 +43,17 @@
               FriendQ
           </h3>
       </div>
-      <div data-role="content">
+      
+      <div data-role="content" style="margin-left:auto;margin-right:auto; ">
       	
-          <div style="" data-controltype="image">
-              <img style="width: 320px; height: 150px" src="https://s3.amazonaws.com/assets.codiqa.com/eP9ECXF6QCqxv3Plg5Fg_App Logo_text only.png">
-              <br/>
-              <img style="width: 100px; height: 100px" src="<?=$user->profile_picture_url?>" />
+          <div style="margin-left:auto;margin-right:auto; display: block;" >
+              <img style="width: 320px; height: 150px; margin-left:auto;margin-right:auto; display: block;" src="https://s3.amazonaws.com/assets.codiqa.com/eP9ECXF6QCqxv3Plg5Fg_App Logo_text only.png">
           </div>
-          <hr style="height:5px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          
+          <div style="margin-left:auto;margin-right:auto;" >    
+              <img style="width: 100px; height: 100px; margin-left:auto;margin-right:auto; display: block;" src="<?=$user->profile_picture_url?>" />
+          </div>
+          <!--hr style="height:5px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;"-->
           <a data-role="button" data-theme="a" href="theq.php" data-ajax="false">
               MY Q
           </a>
@@ -58,6 +61,7 @@
               SEND Q
           </a>
       </div>
+      
   </div>
   
   <div data-role="page" data-control-title="Send Q" data-theme="a" id="page2" data-add-back-btn="true"
@@ -70,7 +74,7 @@
       </div>
       <div data-role="content">
       <form action="api/recommend.php" method="get">
-      <img src="images/FriendQ_App logo.png"/>
+      <!--img src="images/FriendQ_App logo.png"/ -->
           <div data-role="fieldcontain" data-controltype="textinput">
               <label for="textinput1">
                   I think you'd really like...
