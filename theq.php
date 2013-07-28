@@ -47,7 +47,10 @@
 		<a href="#rec_<?=$value->id?>" data-transition="slide">
 		<!--img src="images/FriendQ_logo_ios.png"/-->
 		<img src="<?= $value->sender_picture_url ?>"/>
-		<h3><?=$value->media_type?>:  <?=$value->title?></h3>
+		<img src="images/<?= $value->media_type ?> Icon.png" style="height: 1.3em;"/>
+		
+		<em>Something to <?=$value->media_type?>...</em>
+		<h3><?=$value->title?></h3>
 		<p><?=$value->description?></p>
 		<p><?=$value->post_date?></p>
 		</a>
@@ -79,16 +82,21 @@ foreach ($user->queue as $value){
 		<h1>My Q: <?= $value->title ?></h1>
 	</div><!-- /header -->
 
-	<div data-role="content" data-theme="a">
+	<div data-role="content" data-theme="a" style="background: url('https://s3.amazonaws.com/assets.codiqa.com/LzWvZaZnRWGiwLRHudHB_App Background.png') no-repeat">
 	
-	<img src="<?= $value->thumbnail_url ?>" /><br>
+	<div style="margin-left:auto;margin-right:auto; display: block;" >	
+	<img  style="margin-left:auto;margin-right:auto; display: block;" src="<?= $value->thumbnail_url ?>" /><br>
+	</div>
 	
 	<p><?= $value->description ?></p>
 	<ul >
 	<li>Recommended by: <?=$value->sender_name?></li>
-	<li>It's a <?=$value->media_type?></li>
+	<li><img src="images/<?= $value->media_type ?> Icon.png" style="height: 1.3em;"/> It's something to <?=$value->media_type?>!</li>
 	
+	<?php if($value->url) { ?>
 	<li>Find it here: <a target="_blank" href="<?=$value->url?>"><?=$value->url?></a></li>
+	<?php } ?>
+	
 	
 	<li><span id="currentrating_<?=$value->id?>">
 	<?php

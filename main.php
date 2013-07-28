@@ -91,8 +91,9 @@
           </div>
           
           <div data-role="fieldcontain">
-		   <label for="media_type" class="select">It's a...</label>
+		   <label for="media_type" class="select">It's something to...</label>
 		   <select name="media_type" id="media_type">
+		   <!--
 		      <option value="6">Un-catagorizable</option>
 		      <option value="1">Movies</option>
 		      <option value="2">TV Shows</option>
@@ -100,6 +101,17 @@
 		      <option value="4">Books</option>
 		      <option value="5">Food</option>
 		      <option value="7">Games</option>
+		   -->   
+		      
+		      <option value="6">Enjoy</option>
+		      <option value="1">Watch</option>
+		      <option value="3">Hear</option>
+		      <option value="4">Read</option>
+		      <option value="5">Eat</option>
+		      <option value="7">Play</option>
+		      <option value="8">Do</option>
+		      
+		      
 		   </select>
 		</div>
           

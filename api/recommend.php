@@ -19,7 +19,7 @@ $targetid = !empty($_REQUEST['targetid']) ? intval($_REQUEST['targetid']) : 0;
 $errors = array();
 if(empty($title)) $errors[] = "Please enter a Title";
 if(empty($type)) $errors[] = "Please enter a Media Type";
-if(!empty($url) && !Validate::url($url)) $errors[] = "Invalid URL";
+//if(!empty($url) && !Validate::url($url)) $errors[] = "Invalid URL";
 if(empty($targetid)) $errors[] = "Please select a Recipient";
 
 //return any errors
